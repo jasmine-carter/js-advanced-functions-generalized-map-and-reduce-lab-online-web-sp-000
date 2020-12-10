@@ -7,3 +7,13 @@
    }
    return r
  }
+
+function reduce(source, sv=0) {
+  let r = source
+  let sp = sv
+  for let (i=0; i < source.length; i++) {
+    let el = source[i]
+      callback(el)
+  }
+  return callback(el)
+}
