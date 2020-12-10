@@ -1,4 +1,4 @@
 // Add your functions here
- function map(source, function()) {
+ function map(source, callback) {
 
  }
