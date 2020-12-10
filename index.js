@@ -2,7 +2,7 @@
  function map(source, callback) {
    let r = []
    for (let i = 0; i < source.length; i ++) {
-     callback(i)
+     callback(r)
    }
    return r
  }
