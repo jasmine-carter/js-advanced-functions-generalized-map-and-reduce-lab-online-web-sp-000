@@ -8,7 +8,7 @@
    return r
  }
 
-function reduce(source, sv=0) {
+function reduce(source, callback, sv=0) {
   let r = source
   let sp = sv
   for (let i=0; i < source.length; i++) {
