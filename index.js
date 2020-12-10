@@ -9,11 +9,10 @@
  }
 
 function reduce(source, callback, sv=0) {
-  let r = source
-  let sp = sv
+  let r = (!!sv) ? sv : source[0]
+  let sp = (!!sv) ? 0 : 1
   for (let i=0; i < source.length; i++) {
-    let el = source[i]
-      callback(el)
+    r = callback(source[i], r)
   }
-  return callback(el)
+  return r
 }
